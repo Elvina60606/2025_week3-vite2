@@ -1,47 +1,28 @@
-@import "./variables";
-@import "./reset";
+/*引入字體*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+/*變數.通用樣式*/
+@import "./helper/variables";
+@import "./helper/utils";
 
-body {
-  color: $primary;
-}
+/*第三方套件*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-.box {
-  height: 100px;
-  width: 100px;
-  background-color: $primary;
+/*base*/
+@import "./base/reset";
+@import "./base/base";
 
-  &:hover {
-    background-color: darken($primary, 15%);
-  }
-}
+/*components*/
+@import "./components/button";
+@import "./components/breadcrumb";
 
-.box:hover {
-  background-color: darken($primary, 30%);
-}
+/*layout*/
+@import "./layout/header";
+@import "./layout/footer";
 
+/*page*/
+@import "./pages/index";
+@import "./pages/story";
+@import "./pages/products";
+@import "./pages/product-detail"
 
-
-.box-2 {
-  background-color: $primary-200;
-}
-.box-3 {
-  background-color: darken($primary, 10%);
-}
-
-
-.card {
-  border: 2px solid black;
-  padding: 20px;
-
-  .blue {
-    background-color: blue;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-  p {
-    margin-top: 16px;
-  }
-}
