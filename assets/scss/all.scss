@@ -6,7 +6,6 @@ body {
   color: $primary;
 }
 
-// 
 .box {
   height: 100px;
   width: 100px;
@@ -18,6 +17,7 @@ body {
 }
 
 .box:hover {
+  background-color: darken($primary, 30%);
 }
 
 
@@ -27,7 +27,6 @@ body {
 }
 .box-3 {
   background-color: darken($primary, 10%);
-  // SCSS 運算
 }
 
 
@@ -46,17 +45,3 @@ body {
     margin-top: 16px;
   }
 }
-
-// .blue 必須包含 .card
-// .card.blue {
-//   background-color: blue;
-// }
-
-
-// .card h2 {
-//   font-size: 36px;
-// }
-
-// .card p {
-//   margin-top: 16px;
-// }
