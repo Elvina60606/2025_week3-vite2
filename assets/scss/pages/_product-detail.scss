@@ -22,6 +22,9 @@
 /* 產品顏色 */
 .product-color{
     width: 64px;
+    &:hover{
+        opacity: 60%;
+    }
 }
 
 /* 產品尺寸 */
@@ -31,6 +34,10 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.05em;
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+}
 }
 @media (max-width:767px) {
     .btn-product-size{
@@ -38,14 +45,8 @@
     }
     
 }
-
-.btn-product-size:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 .btn-product-size.active,
-.btn-product-size:hover{
+.btn-product-size:not(:disabled):hover{
     border: 1px solid $neutral-900;
 } 
 
@@ -55,6 +56,10 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.05em;
+    &:hover{
+         background: $neutral-900;
+    color: $neutral-white;
+    }
 }
 @media (max-width:767px) {
     .btn-like{
@@ -62,10 +67,6 @@
     }  
 }
 
-.btn-like:hover{
-    background: $neutral-900;
-    color: $neutral-white;
-}
 .btn-like2{
     padding: 12px;
     border: none;
@@ -76,3 +77,4 @@
     color: $neutral-600;
     font-weight: 400;
  }
+

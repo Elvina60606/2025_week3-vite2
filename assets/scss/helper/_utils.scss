@@ -206,6 +206,9 @@
 .w-33{
     width: 33%;
 }
+.w-50{
+    width: 50%;
+}
 
 @media (max-width:767px) {
     .row-md{
@@ -235,6 +238,13 @@
         padding-right: 6px;
     }
 }
+ @media (max-width:922px) {
+      .col-lg-4{
+        width: 100%;
+        padding-left: 6px;
+        padding-right: 6px;
+    } 
+ }
 
 /* 間距 */
 .gap-8{
@@ -283,6 +293,10 @@
 .py-64{
     padding-top: 64px;
     padding-bottom: 64px;
+}
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .pb-24{
     padding-bottom: 24px;
@@ -478,6 +492,14 @@
     position: relative;
 }
 
+@media (max-width:922px) {
+    .d-lg-block{
+        display: block;
+    }
+    .d-lg-none{
+        display: none;
+    }
+}
 @media (max-width:767px) {
     .d-md-block{
         display: block;
