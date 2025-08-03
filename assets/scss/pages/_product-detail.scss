@@ -21,6 +21,9 @@
 
 /* 產品顏色 */
 .product-color{
+    background-color: inherit;
+    border: none;
+    padding: 0;
     width: 64px;
     &:hover{
         opacity: 60%;

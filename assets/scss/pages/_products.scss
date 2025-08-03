@@ -3,20 +3,25 @@
     border-radius: 0;
     vertical-align: bottom;
     font-weight: 400;
+     &:disabled{
+    color: $neutral-300;
+    background: transparent;
+    cursor: not-allowed;
+    }
 }
 .page-num{
     padding: 8px 15px;
     border-radius: 0;
     font-weight: 400;
-    &:hover{
+    &:not(:disabled)hover{
         background: $neutral-100;
     }
     &:active{
     background: $primary-300;
     font-weight: 500;
     }
-}
-button:disabled{
-    color: $neutral-300;
-    background: transparent;
+    &.active{
+    background: $primary-300;
+    font-weight: 500;
+    }
 }
